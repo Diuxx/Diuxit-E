@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 
 class Item extends React.Component {
   render() {
@@ -12,9 +12,10 @@ class Item extends React.Component {
                 <div class="card-body">
                     <h5 class="card-title">{this.props.project.name}</h5>
                     <p class="card-text">{this.props.project.description}</p>
-                    <a href={'product/' + this.props.project.id} class="btn btn-primary">show me</a>
-                    <a href="#" class="btn btn-primary">
-                      <FontAwesomeIcon icon={ faCoffee }></FontAwesomeIcon>
+                    <a href={'product/' + this.props.project.id} class="btn btn-primary padding-left">show me</a>
+                    &nbsp;
+                    <a href="#" class="btn btn-success">
+                      <FontAwesomeIcon icon={ faShoppingCart }></FontAwesomeIcon>
                     </a>
                 </div>
             </div>
